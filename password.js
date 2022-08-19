@@ -52,11 +52,9 @@ for (i = 0; i < password.length; i++)
     }
 }
 if (!letterChecker || !numberChecker)
-    {   
-        {
-            console.log("Your password needs to contain at least one letter and at least one number")
-        }
-    }
+{
+    console.log("Your password needs to contain at least one letter and at least one number")
+}
 
 
 // let password = "asdsa133"
