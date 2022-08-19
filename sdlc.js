@@ -11,7 +11,20 @@
 // Analysis of Requirements
 // Testing & Integration
 // Planning
+let password = "asdsa133"
 
+for (i = 0; i < password.length; i++)
+{
+    if (!isNaN(password[i]))
+    {
+        //console.log(password[i])
+    }
+}
+
+if (/[a-zA-Z].test(password)/ && isNaN)
+{
+    console.log("yarp")
+}
 
 //////////////////PROBLEM 2////////////////////
 /*
