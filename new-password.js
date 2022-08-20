@@ -13,11 +13,13 @@ for (i in numString){
 
 let hasLetters = false
 let hasNumbers = false
+let hasSpaces = false
+let hasCaps = false
 
-password = 'as1213'
+password = 'asdasdada2Asasd'
 
 if (password.length < 10){
-    console.log("oi, bruv, more letters m8")
+    console.log("oi, bruv, more chars m8")
     return
 }
 for (i = 0; i < password.length; i++) {
@@ -27,9 +29,17 @@ for (i = 0; i < password.length; i++) {
     else if (password[i] in numbersMap){
         hasNumbers = true
     }
+    else if (password[i] === password[i].toUpperCase() && isNaN(+password[i]))
+    {
+        hasCaps = true
+    }
+    else if (password[i] = ' ')
+    {
+        hasSpaces = true
+    }
 }
 
-if (hasLetters && hasNumbers){
+if (hasLetters && hasNumbers && hasCaps && !hasSpaces){
     console.log("GG boi, u did it")
 }
 else {
