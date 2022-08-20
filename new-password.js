@@ -33,7 +33,7 @@ for (i = 0; i < password.length; i++) {
     {
         hasCaps = true
     }
-    else if (password[i] = ' ')
+    else if (password[i] === ' ')
     {
         hasSpaces = true
     }
