@@ -1,14 +1,14 @@
 
 
-let password = "Adaasdasdasds9's"
+let password = "Adaasdasdasds'9s"
 
 function letterChecker(password)
 {
-    var lettersMap = {};
-    let string = 'abcdefghijklmnopqrstuvwxyz'
-    for (i in string)
+    var lettersMap = {}
+    let letterString = 'abcdefghijklmnopqrstuvwxyz'
+    for (i in letterString)
     {
-        lettersMap[string[i]] = null
+        lettersMap[letterString[i]] = null
     }
 
     for (i = 0; i < password.length; i++)
@@ -17,6 +17,24 @@ function letterChecker(password)
             {
                 return true
             }
+    }
+}
+
+function symbolChecker(password)
+{
+    var symbolMap = {}
+    let symbolString = '~`!@#$%^&*()_-+={[}]|:;"<,>.?/\'\\'
+    for (i in symbolString)
+    {
+        symbolMap[symbolString[i]] = null
+    }
+
+    for (i = 0; i < password.length; i++)
+    {
+        if (password[i] in symbolMap)
+        {
+            return true
+        }
     }
 }
 
@@ -69,7 +87,7 @@ function lengthChecker(password)
 }
 
 
-if (letterChecker(password) && numberChecker(password) && upperChecker(password) && lengthChecker(password) && !spaceChecker(password))
+if (letterChecker(password) && numberChecker(password) && upperChecker(password) && lengthChecker(password) && symbolChecker(password) && !spaceChecker(password))
 {
     console.log("u did it")
 }
