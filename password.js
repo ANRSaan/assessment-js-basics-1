@@ -55,19 +55,3 @@ if (!letterChecker || !numberChecker)
 {
     console.log("Your password needs to contain at least one letter and at least one number")
 }
-
-
-// let password = "asdsa133"
-
-// for (i = 0; i < password.length; i++)
-// {
-//     if (!isNaN(password[i]))
-//     {
-//         //console.log(password[i])
-//     }
-// }
-
-// if (/[a-zA-Z].test(password)/ && isNaN)
-// {
-//     console.log("yarp")
-// }
